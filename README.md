@@ -16,7 +16,7 @@ Differences in this fork:
 -Papirus icons can use their colour category icons again with the other "action" non-recolourable icons derived from `Breeze/hicolour` so to fit the colourscheme more properly without much noticeable practical differences.
 ePaprius(and its dark counterpart) still uses the symbolic icons.
 
-To use these icons fresh from the upstream git, copy the icon folder of the proper scheme you want(like `Papirus/ePapirus`), to ~/local/share/icons and select them in `systemsettings`.
+To use these icons fresh from the upstream git, copy the Paprius folder along with the icon folder of the proper scheme you want(like `Papirus/ePapirus`), to ~/local/share/icons and select them in `systemsettings`.
 
 
 Papirus is a free and open source SVG icon theme for Linux, based on [Paper Icon Set](https://github.com/snwh/paper-icon-theme) with a lot of new icons and a few extras, like [Hardcode-Tray support](#hardcoded-tray-icons), [KDE colorscheme support](#kde-colorscheme), [Folder Color support](#folders-color), and [others](#extras).
