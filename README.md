@@ -30,6 +30,8 @@ If you simply want just the "Papirus" theme for Breeze Twilight, then feel free 
 
 An AUR package is also [available](https://aur.archlinux.org/pkgbase/papirus-icon-theme-plasma-fork-git) for Arch Linux.
 
+This fork will be available as long as the issue on Plasma gets resolved.
+
 ##
 
 Papirus is a free and open source SVG icon theme for Linux, based on [Paper Icon Set](https://github.com/snwh/paper-icon-theme) with a lot of new icons and a few extras, like [Hardcode-Tray support](#hardcoded-tray-icons), [KDE colorscheme support](#kde-colorscheme), [Folder Color support](#folders-color), and [others](#extras).
