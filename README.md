@@ -26,7 +26,7 @@ NOTE:Custom fork for Plasma to use Breeze colourable icons with the non-recolour
 
 To use these icons fresh from the upstream git, copy the "Paprius" folder along with the folder of the proper icon scheme you want(like `Papirus-Dark/ePapirus`), to `~/local/share/icons` and select them in System Settings.
 
-If you simply want just the "Papirus" theme for Breeze Twilight, then feel free to remove the `Light⁄Dark symbolics/` in "Papirus" to save space.
+If you simply want just the "Papirus" theme for Breeze Twilight, then feel free to remove the `Light/Dark symbolics` in "Papirus" to save space.
 
 An AUR package is also [available](https://aur.archlinux.org/pkgbase/papirus-icon-theme-plasma-fork-git) for Arch Linux.
 
