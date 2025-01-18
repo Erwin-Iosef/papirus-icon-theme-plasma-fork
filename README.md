@@ -12,12 +12,25 @@
 
 NOTE:Custom fork for Plasma to use Breeze colourable icons with the non-recolourable Papirus ones removed and added missing icons. Use at your own risk.
 
-Differences in this fork:
--Papirus icons can use their colour category icons again with the other "action" non-recolourable icons derived from `Breeze/hicolour` so to fit the colourscheme more properly without much noticeable practical differences.
-ePaprius(and its dark counterpart) still uses the symbolic icons.
+## Differences in this fork:
 
-To use these icons fresh from the upstream git, copy the Paprius folder along with the icon folder of the proper scheme you want(like `Papirus/ePapirus`), to ~/local/share/icons and select them in `systemsettings`.
+- Categorical icons in Kickoff/Application menu use the colour icons we had before Plasma decided we were going to use symbolic from Plasma 6.2.
 
+- The "Computer" and "Desktop" icons showing dark in a dark background like in Application Menu/Places when you have "Papirus" icons selected(instead of its white counterpart) is fixed.
+
+- The non-recolourable icons(like actions and the gear icon that appears in Panel/Notifications) are removed and instead by default use hicolour/Breeze colourable icons, the differences are fairly minimal.
+
+- The ePapirus icons however will still use symbolic icons for kickoff as they're part of its style.
+
+## Instructions:
+
+To use these icons fresh from the upstream git, copy the "Paprius" folder along with the folder of the proper icon scheme you want(like `Papirus-Dark/ePapirus`), to `~/local/share/icons` and select them in System Settings.
+
+If you simply want just the "Papirus" theme for Breeze Twilight, then feel free to remove the `Light⁄Dark symbolics/` in "Papirus" to save space.
+
+An AUR package is also [available](https://aur.archlinux.org/pkgbase/papirus-icon-theme-plasma-fork-git) for Arch Linux.
+
+##
 
 Papirus is a free and open source SVG icon theme for Linux, based on [Paper Icon Set](https://github.com/snwh/paper-icon-theme) with a lot of new icons and a few extras, like [Hardcode-Tray support](#hardcoded-tray-icons), [KDE colorscheme support](#kde-colorscheme), [Folder Color support](#folders-color), and [others](#extras).
 
