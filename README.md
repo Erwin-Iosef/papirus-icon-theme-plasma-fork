@@ -13,9 +13,10 @@
 NOTE:Custom fork for Plasma to use Breeze colourable icons with the non-recolourable Papirus ones removed and added missing icons. Use at your own risk.
 
 ## Differences in this fork(Revision 1.2):
-- Papirus-Light & Dark will be still available even as Papirus fullfills the Light and Dark needs via respecting its colourscheme, until a good time comes to remove it.
+- Papirus-Light & Dark will be still available even as Papirus fullfills the Light and Dark needs via respecting its colourscheme, until a good reason appears to remove it.
 - ePapirus will use the colourscheme respecting icons as well.
-- TBA
+- Papirus-modified is now Papirus with updated symbolic icons.
+- Script is updated to better reflect Papirus's way of recoloured icons as seen in Papirus/16x16.
 
 
 ## Instructions:
