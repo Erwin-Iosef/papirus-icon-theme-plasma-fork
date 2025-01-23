@@ -14,7 +14,7 @@ Custom fork for Plasma to use Papirus with respect to Colorscheme support. A scr
 
 ## Differences in this fork(Revision 1.2.2):
 - Papirus will have coloured category icons until Plasma 6.3 release which reverts the symbolic icon change[(commit-2700)](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/2700)
-  * If you want to change that find the line `symbolic/categories` in `index.theme` and remove the ! character.
+  * If you want to change that find the line 728 in `symbolic/categories` in `index.theme` and remove the ! character.
 
 - Papirus-Light & Dark are not included due to redundancy reasons, users can still git clone the official upstream git.
 - ePapirus will use the colourscheme respecting icons as well.llop
