@@ -19,7 +19,8 @@ Custom fork for Plasma to use Papirus with respect to Colorscheme support. A scr
 - ePapirus will use the colourscheme respecting icons as well.llop
 - Script is updated to better reflect Papirus's way of recoloured icons as seen in Papirus/16x16.
 
-##
+
+
 Papirus is a free and open source SVG icon theme for Linux, based on [Paper Icon Set](https://github.com/snwh/paper-icon-theme) with a lot of new icons and a few extras, like [Hardcode-Tray support](#hardcoded-tray-icons), [KDE colorscheme support](#kde-colorscheme), [Folder Color support](#folders-color), and [a few others](#extras).
 
 Android version available [here](https://github.com/PapirusDevelopmentTeam/papirus_icons).
