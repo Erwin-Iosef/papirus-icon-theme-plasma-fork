@@ -2,7 +2,7 @@ import os
 from bs4 import BeautifulSoup
 
 # Path to the directory containing SVG files
-directory = '/path/to/your/svg/files'
+directory = 'path/to/symbolic/svg'
 
 # New style element to be added within <defs>
 style_element = '''<defs>
