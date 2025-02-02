@@ -68,48 +68,64 @@ def ModSVG(refsvg,lines):
                 content.append(line)
         #print(content)
         return content
+        
 
-def Backup(SVG_DIR):
+def BackupException(SVG_DIR,backupdir):
+    overwrite=input("Directory already exists. Overwrite?(y or n) ")
+    if overwrite=="y":
+        shutil.rmtree(backupdir)
+        shutil.copytree(SVG_DIR,backupdir,dirs_exist_ok=True,symlinks=True)
+    elif overwrite=="n":
+        return
+    else:
+      BackupException(SVG_DIR,backupdir)
+
+
+def YesBackup(SVG_DIR):
     backup=input("Create backup of SVG directory?(y or n) ")
     if backup=="y":
+        Backup(SVG_DIR)
+    elif backup=="n":
+        return
+    else: 
+        YesBackup(SVG_DIR)
+        
+        
+def Backup(SVG_DIR):
         try:
             backupfolder="svgsbak"
             backupdir=os.path.join(SVG_DIR,os.pardir,backupfolder)
             backupdir=os.path.abspath(backupdir)
             shutil.copytree(SVG_DIR,backupdir,symlinks=True)
+            
         except FileExistsError:
-            overwrite=input("Directory already exists. Overwrite?(y or n) ")
-            if overwrite=="y":
-                shutil.rmtree(backupdir)
-                shutil.copytree(SVG_DIR,backupdir,dirs_exist_ok=True,symlinks=True)
-            elif overwrite=="n":
-                return
-            else:
-                overwrite=input("Directory already exists. Overwrite?(y or n) ")
+            BackupException(SVG_DIR,backupdir)
+            
         finally:
                 print(f"Backupfolder {backupdir} is created")
-    elif backup=="n":
-        return
-    else: 
-        backup=input("Create backup of SVG directory?(y or n) ")
+
 
 def startup():
-    SVG_DIR=input("Input your SVG directory here(copy and paste absolute path):")
+    SVG_DIR=input("Input your SVG directory here(copy and paste absolute path): ")
     if os.path.exists(SVG_DIR)==False:
         raise ValueError("Invalid path!")
-        exit()
-        
-    sure=input(f"{SVG_DIR} \n Is this path correct?(y) ")
+        startup(SVG_DIR)
+    else:    
+        startupfinal(SVG_DIR)
+    
+
+def startupfinal(SVG_DIR):
+    sure= input(f"{SVG_DIR} \n Is this path correct?(y or n) ")
     if sure=="y":    
         start=input("Begin?(y or n) ")
         if start=="y":
-            Backup(SVG_DIR)
+            YesBackup(SVG_DIR)
             mainctrl(SVG_DIR)
         elif start=="n":
             exit()
         else:
-            start=input("Begin?(y or n) ")
+            startupfinal(SVG_DIR)
     else:
-        SVG_DIR=input("Input your SVG directory here(copy and paste absolute path):")
+      startup()
         
 startup()
