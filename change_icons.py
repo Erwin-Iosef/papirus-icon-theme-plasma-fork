@@ -1,9 +1,8 @@
 # Author: Erwin-Iosef
-# Date: 2/Feb/2025
+# Date: 3/Feb/2025
 # commented lines are for debugging purposes
 import os
 import shutil
-#Set your directory where your non-colourable icons are:
 
 svg_mod='''<defs>
   <style id="current-color-scheme" type="text/css">
