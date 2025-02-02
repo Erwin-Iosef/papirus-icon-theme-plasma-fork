@@ -223,7 +223,7 @@ Scale=2
 Type=Fixed
 
 [22x22@2x/categories]
-Context=Categories
+Context=#Categories
 Size=22
 Scale=2
 Type=Fixed
@@ -726,7 +726,7 @@ MaxSize=512
 Type=Scalable
 
 [symbolic/categories]
-Context=#Categories
+Context=Categories
 Size=16
 MinSize=16
 MaxSize=512
