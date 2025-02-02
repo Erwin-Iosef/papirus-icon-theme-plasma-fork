@@ -37,13 +37,13 @@ def CheckSVG(refsvg):
 
         elif "fill:#444444" in linesjoined:
             svgfile.seek(0)
-            content=ModSVG(refsvg,lines,linesjoined)
+            content=ModSVG(refsvg,lines)
             #print(content)
             svgfile.truncate(0)
             svgfile.writelines(content)
             print(f"{refsvg} rewritten successfully")
 
-def ModSVG(refsvg,lines,linesjoined):
+def ModSVG(refsvg,lines):
         content=[]
         exceptlines=['success','error','warning']
         for line in lines:
