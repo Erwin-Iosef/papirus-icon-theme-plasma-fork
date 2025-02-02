@@ -8,6 +8,6 @@
     .ColorScheme-NegativeText { color:#f44336; }
   </style>
 </defs>
- <circle style="fill:currentColor" cx="4.5" cy="11.5" r="2.5"/>
- <circle style="fill:currentColor" cx="11.5" cy="11.5" r="2.5"/>
+ <circle class="ColorScheme-Text" style="fill:currentColor" cx="4.5" cy="11.5" r="2.5"/>
+ <circle class="ColorScheme-Text" style="fill:currentColor" cx="11.5" cy="11.5" r="2.5"/>
 </svg>

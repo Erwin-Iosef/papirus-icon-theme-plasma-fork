@@ -8,5 +8,5 @@
     .ColorScheme-NegativeText { color:#f44336; }
   </style>
 </defs>
- <rect style="fill:currentColor" width="10" height="2" x="3" y="7"/>
+ <rect class="ColorScheme-Text" style="fill:currentColor" width="10" height="2" x="3" y="7"/>
 </svg>

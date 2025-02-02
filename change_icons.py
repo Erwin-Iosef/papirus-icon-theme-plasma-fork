@@ -1,6 +1,6 @@
 # Author: Erwin-Iosef
-# Date: 3/Feb/2025
-# commented lines are for debugging purposes, improvements welcome!
+# Date: 2/Feb/2025
+# commented lines are for debugging purposes
 import os
 import shutil
 #Set your directory where your non-colourable icons are:
@@ -15,7 +15,7 @@ svg_mod='''<defs>
   </style>
 </defs>'''
 
-def mainctrl():
+def mainctrl(SVG_DIR):
     for (root,dirs,files) in os.walk(SVG_DIR):
         for file in files:
             file=os.path.join(root,file)
@@ -57,20 +57,20 @@ def ModSVG(refsvg,lines,linesjoined):
                 elif line.strip().startswith("<svg"):
                     content.append(line + svg_mod + '\n')    
                     continue
-    
-                elif "fill:currentColor" not in line.strip():
+                
+                elif 'class="ColorScheme-Text"' not in line.strip():
+                    line=line.replace('style="fill:#444444"','class="ColorScheme-Text" style="fill:currentColor"')
+                    line=line.replace('style="opacity:0.35;fill:#444444"','class="ColorScheme-Text" style="opacity:.35;fill:currentColor"')
+                    
+                if "fill:currentColor" not in line.strip():
                     #print("added fill:#4444444")
                     line=line.replace("fill:#444444",'fill:currentColor')
-                
-                if 'class="ColorScheme-Text"' not in line.strip():
-                    #print("added Colorscheme-Text")
-                    line=line.replace("<path", '<path class="ColorScheme-Text"')
                     
                 content.append(line)
         #print(content)
         return content
 
-def Backup():
+def Backup(SVG_DIR):
     backup=input("Create backup of SVG directory?(y or n) ")
     if backup=="y":
         try:
@@ -104,8 +104,8 @@ def startup():
     if sure=="y":    
         start=input("Begin?(y or n) ")
         if start=="y":
-            Backup()
-            mainctrl()
+            Backup(SVG_DIR)
+            mainctrl(SVG_DIR)
         elif start=="n":
             exit()
         else:
