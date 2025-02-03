@@ -59,7 +59,7 @@ def ModSVG(refsvg,lines):
                 
                 elif 'class="ColorScheme-Text"' not in line.strip():
                     line=line.replace('style="fill:#444444"','class="ColorScheme-Text" style="fill:currentColor"')
-                    line=line.replace('style="opacity:0.35;fill:#444444"','class="ColorScheme-Text" style="opacity:.35;fill:currentColor"')
+                    line=line.replace('style="opacity:.35;fill:#444444"','class="ColorScheme-Text" style="opacity:.35;fill:currentColor"')
                     
                 if "fill:currentColor" not in line.strip():
                     #print("added fill:#4444444")

@@ -8,6 +8,6 @@
     .ColorScheme-NegativeText { color:#f44336; }
   </style>
 </defs>
- <path style="opacity:.35;fill:currentColor" d="M 0,0 V 7 H 7 V 0 Z"/>
+ <path class="ColorScheme-Text" style="opacity:.35;fill:currentColor" d="M 0,0 V 7 H 7 V 0 Z"/>
  <path class="ColorScheme-Text" style="fill:currentColor" d="M 0,0 9,9 H 16 L 7,0 Z M 5,9 V 11 L 0,11.01 V 13.01 L 5,13 V 15 L 9,12 Z"/>
 </svg>
