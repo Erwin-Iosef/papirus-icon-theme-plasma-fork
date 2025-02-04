@@ -1,5 +1,7 @@
 # Author: Erwin-Iosef
 # Date: 3/Feb/2025
+# Purpose: To modify and add colorscheme support lines to non recolourable symbolic icons for Papirus.
+
 # commented lines are for debugging purposes
 import os
 import shutil
