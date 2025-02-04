@@ -10,13 +10,15 @@
   <img alt="mimetypes" src="https://img.shields.io/github/directory-file-count/PapirusDevelopmentTeam/papirus-icon-theme/Papirus%2F48x48%2Fmimetypes?label=mimetypes%20icons&style=flat-square&colorB=5294e2"/>
 </p>
 
-Custom fork for Plasma to use Papirus with respect to Colorscheme support. A script was used to change these icons to be re-colourable. [Check it out](https://github.com/Erwin-Iosef/papirus-icon-theme-plasma-fork/blob/master/change_icons.py).
+Custom fork for Plasma to use Papirus symbolic icons with respect to Colorscheme support. A script was used to change these icons to be re-colourable. [Check it out](https://github.com/Erwin-Iosef/papirus-icon-theme-plasma-fork/blob/master/change_icons.py).
 
-## Differences in this fork:
+## Current features of this fork:
+
+- Symbolic icons now work with colorscheme support implemented cleanly.
+- ePapirus will use the colourscheme respecting icons as well.
 - Papirus will have coloured category icons until Plasma 6.3 release which reverts the symbolic icon change[(commit-2700)](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/2700)
   * If you want to change that find the line 729 in `symbolic/categories` in `index.theme` and remove the # character.
 - Papirus-Light & Dark are not included due to redundancy reasons, users can still git clone the official upstream git.
-- ePapirus will use the colourscheme respecting icons as well.llop
 - Script is updated to better reflect Papirus's way of recoloured icons as seen in Papirus/16x16.
 
  ## CHANGELOG:
