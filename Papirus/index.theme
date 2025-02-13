@@ -726,7 +726,7 @@ MaxSize=512
 Type=Scalable
 
 [symbolic/categories]
-Context=#Categories
+Context=Categories
 Size=16
 MinSize=16
 MaxSize=512
