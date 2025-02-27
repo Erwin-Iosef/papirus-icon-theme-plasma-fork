@@ -26,7 +26,9 @@ Custom fork for Plasma to use Papirus symbolic icons with respect to Colorscheme
   ## Update 12/2/25
    - Since Plasma 6.3's release the categorical icons now work as intended with users who don't like the now-default symbolic icons can now use the KDE Menu editor
     to change them as desired.
-   
+
+     * A quicker and dirty fix is to find line 729 in `index.theme` of Papirus/ePapirus and add the # character, as in `[#Categories/symbolic]`, so that the categories folder of the symbolic directory of the respective icon theme will not be detected by the icon loader.
+    
 Papirus is a free and open source SVG icon theme for Linux, based on [Paper Icon Set](https://github.com/snwh/paper-icon-theme) with a lot of new icons and a few extras, like [Hardcode-Tray support](#hardcoded-tray-icons), [KDE colorscheme support](#kde-colorscheme), [Folder Color support](#folders-color), and [a few others](#extras).
 
 Android version available [here](https://github.com/PapirusDevelopmentTeam/papirus_icons).
