@@ -19,6 +19,12 @@ Custom fork for Plasma to use Papirus symbolic icons with respect to Colorscheme
 - Papirus-Light & Dark are not included due to redundancy reasons, users can still git clone the official upstream git.
 - Script is updated to better reflect Papirus's way of recoloured icons as seen in Papirus/16x16.
 
+## How to Install
+
+- Check out the AUR package if you use Arch Linux: https://aur.archlinux.org/packages/papirus-icon-theme-plasma-fork-git
+- Or just copy the Papirus folder or ePapirus(include Papirus as well in this case) to `~/.local/share/icons` to be installed as user-wide icons.
+
+
  ## CHANGELOG:
    ### Version 1.3:
   - New script made from scratch along with modified icons with less cruft released.
@@ -29,6 +35,8 @@ Custom fork for Plasma to use Papirus symbolic icons with respect to Colorscheme
 
      * A quicker and dirty fix is to find line 729 in `index.theme` of Papirus/ePapirus and add the # character, as in `[#Categories/symbolic]`, so that the categories folder of the symbolic directory of the respective icon theme will not be detected by the icon loader.
     
+##
+
 Papirus is a free and open source SVG icon theme for Linux, based on [Paper Icon Set](https://github.com/snwh/paper-icon-theme) with a lot of new icons and a few extras, like [Hardcode-Tray support](#hardcoded-tray-icons), [KDE colorscheme support](#kde-colorscheme), [Folder Color support](#folders-color), and [a few others](#extras).
 
 Android version available [here](https://github.com/PapirusDevelopmentTeam/papirus_icons).
