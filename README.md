@@ -10,6 +10,9 @@
   <img alt="mimetypes" src="https://img.shields.io/github/directory-file-count/PapirusDevelopmentTeam/papirus-icon-theme/Papirus%2F48x48%2Fmimetypes?label=mimetypes%20icons&style=flat-square&colorB=5294e2"/>
 </p>
 
+## Notice: 
+As of [this change in upstream](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/issues/3663#issuecomment-2726977525), this fork is made obsolete. Use upstream Papirus for the latest changes and icons.
+
 Custom fork for Plasma to use Papirus symbolic icons with respect to Colorscheme support. A script was used to change these icons to be re-colourable. [Check it out](https://github.com/Erwin-Iosef/papirus-icon-theme-plasma-fork/blob/master/change_icons.py).
 
 ## Current features of this fork:
