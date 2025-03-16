@@ -13,9 +13,11 @@
 ## Notice: 
 As of [this change in upstream](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/issues/3663#issuecomment-2726977525), this fork is made obsolete. Use upstream Papirus for the latest changes and icons.
 
+
+##
 Custom fork for Plasma to use Papirus symbolic icons with respect to Colorscheme support. A script was used to change these icons to be re-colourable. [Check it out](https://github.com/Erwin-Iosef/papirus-icon-theme-plasma-fork/blob/master/change_icons.py).
 
-## Current features of this fork:
+Current features of this fork:
 
 - Symbolic icons now work with colorscheme support implemented cleanly.
 - ePapirus will use the colourscheme respecting icons as well.
